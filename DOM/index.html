@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1>Look ath the console!</h1>
+		<h1 id="welcomeText"></h1>
+		<h2>About you</h2>
+		<h2 id="about"></h2>
+
+		<script src="script.js"></script>
+		<script>
+			console.log('This is a message from internal.');
+			var user = prompt('Please Enter your name');
+			console.log(user);
+			console.log("your name is " + user.length + " chararcters long");
+
+			//Getting the element that has the id 'welcomeText'
+			var h1 = document.getElementById('welcomeText');
+			h1.innerHTML = 'Hello '+ user + '!!!';
+
+			var favColor = prompt("What/'s your favorite color")
+			h1.style.color = favColor;
+
+			var info = prompt ('Tell me about yourself');
+			document.getElementById('about').innerHTML = info;
+
+
+		</script>
+	</body>
+</html>
