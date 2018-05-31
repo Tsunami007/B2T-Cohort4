@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id="message" onclick="clickText()">Click me!!</h1>
+		<input onclick="increaseNum()" type="button" value="Click to increase!!">
+			<p id=“display”>David</p>
+		
+
+		<form>
+		First name: <input type="text" id="fname"/><br>
+		Last name: <input type="text" id="lname"/><br>
+		<input type="button" value="Submit" onclick="getFormValue()"/>
+		</form>
+
+		<script>
+			function clickText(){
+				document.getElementById('message').innerHTML = 'Display Name!!';
+			}
+		</script>
+
+
+	</body>
+</html>
