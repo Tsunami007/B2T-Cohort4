@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id="food"></h1>
+		<input type="button" value="enter food" onclick="add()" id="textbox">
+
+		<script>
+			var arr = [' rice ', ' beans ', ' chicken '];
+				function add(){
+					var user = prompt('please enter food');
+					arr.push(document.getElementById('textbox').value.toLowerCase());
+					document.getElementById('food').innerHTML= arr.join('with')
+				}
+				function sorting(){
+					arr.sort();
+				}
+				function pushPrompt(){
+					var element =('enter food')
+					arr.push();
+				}
+
+
+
+		</script>
+
+	</body>
+</html>
