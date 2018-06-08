@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h2 id="name">Click to Reveal Name</h2>
+		<input onclick="myName()" type="button" value="Click to Display">
+
+		<script>
+			function myName(){
+				var name=prompt("What's your name: ")
+				document.getElementById('name').innerHTML= "My name is: "+ name;
+
+			}
+			
+
+		</script>
+
+	</body>
+</html>
