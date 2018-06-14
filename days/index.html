@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id="Day"></h1>
+		<script>
+			var day = new Date().getDay();
+			switch (day){
+				case 0:
+					document.getElementById('Day').innerHTML= 'sunday';
+					break;
+				case 1:
+					document.getElementById('Day').innerHTML= 'monday';
+					break;
+				case 2:
+					document.getElementById('Day').innerHTML= 'tuesday';
+					break;
+				case 3:
+					document.getElementById('Day').innerHTML='wednesday';
+					break;
+				case 4:
+					document.getElementById('Day').innerHTML= 'thursday';
+					break;
+				case 5:
+					document.getElementById('Day').innerHTML= 'friday';
+					break;
+				case 6:
+					document.getElementById('Day').innerHTML='saturday';
+					break;
+				}
+		</script>
+	</body>
+</html>
