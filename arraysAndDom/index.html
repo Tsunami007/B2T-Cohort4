@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id="fruits"></h1>
+		<input id="textbox" type="button" value="enter fruits" onclick="add()" >
+
+		<script>
+			var fruitsArr = ['APPLE', 'ORANGE', 'KIWI'];
+				
+			function add(){
+					var fruit = prompt('please enter fruit').toUpperCase();
+					fruitsArr.push(fruit);
+					sorting();
+					document.getElementById('fruits').innerHTML= fruitsArr.join(' with ');
+				}
+			
+			function sorting(){
+			 		fruitsArr.sort();
+			 }
+
+			 //	function pushPrompt(){
+			// 		var element =('enter food')
+			// 		arr.push();
+			// 	}
+		</script>
+
+	</body>
+</html>
