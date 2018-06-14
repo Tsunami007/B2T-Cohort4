@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<input id="shift" type="button"  value="ON">
+		
+		<div id="box" style="width:500px; height:500px; background-color: red; "></div>
+		
+		<script>
+
+
+
+			function changeText() {
+				var text = document.getElementById('shift');
+				if (text.value=="ON"){
+					text.value="OFF";
+				}
+				else{
+					text.value = "ON";
+				
+				} 
+			}
+			
+			document.getElementById('shift').addEventListener("click",changeText);
+
+			function colorBox (){
+				var button = document.getElementById('shift');
+				if (button.value == 'ON'){
+					document.getElementById('box').style.backgroundColor = "green";
+				}
+			}
+			document.getElementById('box').addEventListener("mouseover",colorBox);
+
+			function changeColorToRed () {
+				var button = document.getElementById('shift');
+				if (button.value == 'ON'){
+					document.getElementById('box').style.backgroundColor = "red";
+				} 
+			}
+			document.getElementById('box').addEventListener("mouseleave",changeColorToRed);
+
+		</script>
+
+	</body>
+</html>
