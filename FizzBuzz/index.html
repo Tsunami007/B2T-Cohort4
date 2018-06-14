@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id="Fizz"></h1>
+		<script>
+			var num = 1;
+			while(num <= 100){
+				if(num%3 == 0){
+				document.getElementById('Fizz').innerHTML += 'Fizz ' + '<br>';
+				}
+				
+			
+				else if(num%5 == 0){
+					document.getElementById('Fizz').innerHTML += 'Buzz ' + '<br>';
+				}
+
+				else if(num%3 ==0 && num%5 ==0){
+					document.getElementById('Fizz').innerHTML += 'FizzBuzz ' +'<br>';
+				}
+				else {
+					document.getElementById('Fizz').innerHTML += num + ' ' + '<br>';
+				}
+				
+				num++;
+			}
+			
+			
+
+				
+					
+
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<ul id="test"></ul>
+		<script>
+			var crayons = ["Blue","Green","Red","Violet","Indigo", "Yellow"];
+			var o =["th","st","nd","rd"]
+
+			
+			for(var i = 0; i < crayons.length; i++){
+				if(crayons[i]=="Blue"){
+					document.getElementById('test').innerHTML += '<li>' + "1" + o[1] + ' choice is ' +crayons[i]+ '</li>';
+				}else if(crayons[i]=="Green"){
+					document.getElementById('test').innerHTML += '<li>' + "2" + o[2] + ' choice is ' +crayons[i]+ '</li>';
+				
+			   }else if(crayons[i] =="Red"){
+					document.getElementById('test').innerHTML += '<li>' + "3" + o[3] + ' choice is ' +crayons[i]+ '</li>';
+			   }
+			   else if(crayons[i] =="Violet"){
+					document.getElementById('test').innerHTML += '<li>' + "4" + o[0] + ' choice is ' +crayons[i]+ '</li>';
+			   }
+			   else if(crayons[i] =="Indigo"){
+					document.getElementById('test').innerHTML += '<li>' + "5" + o[0] + ' choice is ' +crayons[i]+ '</li>';
+			   
+			   }else if(crayons[i] =="Yellow"){
+					document.getElementById('test').innerHTML += '<li>' + "6" + o[0] + ' choice is ' +crayons[i]+ '</li>';
+			   
+			   }
+		}
+		</script>
+
+	</body>
+</html>
