@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id="HappyDay"></h1>
+		<h1 id="Happy"></h1>
+
+
+		<script>
+
+			var library = [
+			{author: "Bill Gates", title:"The Road Ahead", readingStatus:true},
+			{author:"Steve Jobs", title:"Walter Isaacon", readingStatus:true},
+			{author: "Suzanne Colliins", title: "Mockingjay: The Final Book of The Hunger Games", readingStatus: false},
+			];
+
+
+			for (var i=0;i<library.length;i++){
+				
+				if (library[i].readingStatus == true){
+					document.getElementById('HappyDay').innerHTML+= "Already read " + library[i].title + " by " +library[i].author+"<br>";
+                 } else{
+                 		document.getElementById('HappyDay').innerHTML+= "You still need to read " + library[i].title + " by " + library[i].author+"<br>";
+
+                 }
+			};
+		
+		
+		
+
+
+		</script>
+
+	</body>
+</html>
